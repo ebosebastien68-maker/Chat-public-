@@ -2,9 +2,8 @@ import { useState } from "react";
 import { Input, Stack, IconButton, Box, Container } from "@chakra-ui/react";
 import { toaster } from "@/components/ui/toaster";
 import { BiSend } from "react-icons/bi";
-import { useAppContext } from "../context/appContext";
-import supabase from "../supabaseClient";
-
+import { useAppContext } from "../context/appContext.jsx";
+import { supabase } from "../supabaseClient.js";
 export default function MessageForm() {
   const { username, country, session } = useAppContext();
   const [message, setMessage] = useState("");
