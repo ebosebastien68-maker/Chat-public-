@@ -2,7 +2,7 @@ import { Button, Grid, GridItem, Image } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 import { supabase } from "../supabaseClient.js";
 import { ColorModeButton } from "@/components/ui/color-mode";
-import { useAppContext } from "../context/appContext";
+import { useAppContext } from "../context/appContext.jsx";
 import NameForm from "./NameForm";
 export default function Header() {
   const { username, setUsername, randomUsername, session } = useAppContext();
