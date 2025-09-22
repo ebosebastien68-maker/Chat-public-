@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Input, Stack, IconButton } from "@chakra-ui/react";
 import { BiSave, BiEdit } from "react-icons/bi";
-import { useAppContext } from "../context/appContext";
-
+import { useAppContext } from "../context/appContext.jsx";
 export default function NameForm() {
   const { username, setUsername } = useAppContext();
   const [newUsername, setNewUsername] = useState(username);
