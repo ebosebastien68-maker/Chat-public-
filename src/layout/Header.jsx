@@ -56,7 +56,7 @@ export default function Header() {
             variant="outline"
             onClick={() =>
               supabase.auth.signInWithOAuth({
-                provider: "github",
+                provider: "google",
                 redirectTo: window.location.origin,
               })
             }
